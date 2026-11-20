@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Traffic Management & Detour Planning | CityPlanners</title>
+<meta name="description" content="CityPlanners provides construction traffic management, traffic diversion planning, temporary traffic management plans, road closure planning and work zone traffic consultancy.">
+
+<style>
+:root{
+--navy:#0b1f3a;
+--blue:#123c70;
+--green:#25a56a;
+--yellow:#f4c542;
+--light:#f4f7fb;
+--text:#243447;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.7}
+a{text-decoration:none}
+.container{width:92%;max-width:1200px;margin:auto}
+
+header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.header-inner{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:20px}
+.logo{font-size:28px;font-weight:800;color:var(--navy)}
+.logo span{color:var(--green)}
+.tagline{font-size:11px;letter-spacing:1px;color:#64748b}
+nav{display:flex;align-items:center;gap:22px}
+nav a{color:var(--navy);font-size:14px;font-weight:bold}
+nav a:hover{color:var(--green)}
+.contact-btn{background:var(--green);color:white;padding:10px 17px;border-radius:6px}
+
+.hero{background:linear-gradient(120deg,var(--navy),var(--blue));color:white;padding:75px 0}
+.hero-content{max-width:900px}
+.eyebrow{color:var(--yellow);font-size:13px;font-weight:bold;letter-spacing:2px}
+.hero h1{font-size:43px;line-height:1.2;margin:18px 0}
+.hero p{font-size:18px;color:#d9e6f5;margin-bottom:25px}
+.btn{display:inline-block;padding:13px 22px;border-radius:6px;font-weight:bold;margin:5px 8px 5px 0}
+.btn-green{background:var(--green);color:white}
+.btn-outline{border:1px solid white;color:white}
+
+section{padding:65px 0}
+.section-title{text-align:center;margin-bottom:38px}
+.section-title h2{font-size:32px;color:var(--navy);margin:8px 0}
+.section-title p{max-width:780px;margin:auto;color:#64748b}
+.green-label{color:var(--green);font-size:13px;font-weight:bold;letter-spacing:2px}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;border:1px solid #e5eaf1;border-radius:10px;padding:25px}
+.card h3{color:var(--navy);margin-bottom:10px;font-size:19px}
+.card p{font-size:14px;color:#64748b}
+.icon{font-size:28px;margin-bottom:10px}
+
+.light{background:var(--light)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:start}
+.content h2{color:var(--navy);font-size:29px;margin-bottom:18px}
+.content p{color:#64748b;margin-bottom:14px}
+.list{list-style:none;margin-top:15px}
+.list li{margin-bottom:10px}
+.list li::before{content:"✓";color:var(--green);font-weight:bold;margin-right:10px}
+
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.process-card{background:var(--light);border-radius:10px;padding:22px}
+.process-card strong{display:block;color:var(--green);font-size:13px;margin-bottom:8px}
+.process-card h3{color:var(--navy);font-size:18px;margin-bottom:8px}
+.process-card p{font-size:14px;color:#64748b}
+
+.highlight{background:var(--navy);color:white;border-radius:12px;padding:35px}
+.highlight h2{margin-bottom:15px}
+.highlight p{color:#d4e0ef}
+
+.notice{background:#fff8e5;border-left:4px solid var(--yellow);padding:22px;border-radius:6px;color:#5b4a20}
+.notice h3{margin-bottom:8px}
+
+.cta{background:var(--navy);color:white;text-align:center}
+.cta h2{font-size:32px;margin-bottom:15px}
+.cta p{max-width:750px;margin:0 auto 22px;color:#d1deee}
+
+footer{background:#071426;color:#cbd5e1;padding:40px 0 20px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px;padding-bottom:25px}
+footer h3,footer h4{color:white;margin-bottom:12px}
+footer p,footer li{font-size:14px;margin-bottom:8px}
+footer ul{list-style:none}
+footer a{color:#cbd5e1}
+footer a:hover{color:var(--yellow)}
+.copyright{border-top:1px solid #23354d;padding-top:18px;text-align:center;font-size:13px}
+
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25d366;color:white;padding:14px 18px;border-radius:40px;font-weight:bold;z-index:1000;box-shadow:0 4px 15px rgba(0,0,0,.2)}
+
+@media(max-width:900px){
+.grid{grid-template-columns:repeat(2,1fr)}
+.process-grid{grid-template-columns:repeat(2,1fr)}
+.two-col{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+.header-inner{flex-direction:column;align-items:flex-start}
+nav{flex-wrap:wrap;gap:12px}
+.hero{padding:55px 0}
+.hero h1{font-size:33px}
+.hero p{font-size:16px}
+.grid,.process-grid{grid-template-columns:1fr}
+.section-title h2{font-size:27px}
+.footer-grid{grid-template-columns:1fr}
+.cta h2{font-size:27px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container header-inner">
+<div>
+<a href="index.html" class="logo">CITY<span>PLANNERS</span></a>
+<div class="tagline">TRAFFIC · TRANSPORTATION · INFRASTRUCTURE</div>
+</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="index.html#services">Services</a>
+<a href="traffic-studies.html">Traffic Studies</a>
+<a href="petrol-pump.html">Petrol Pump</a>
+<a href="contact.html" class="contact-btn">Contact Us</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container hero-content">
+<div class="eyebrow">CONSTRUCTION · ROADS · INFRASTRUCTURE</div>
+<h1>Traffic Management & Detour Planning</h1>
+<p>
+Planning traffic movement safely and efficiently during road construction,
+infrastructure works, utility installation, metro projects and other activities
+that affect existing traffic operations.
+</p>
+<a href="contact.html" class="btn btn-green">Discuss Your Project</a>
+<a href="https://wa.me/919962105943?text=Hello%20CityPlanners%2C%20I%20need%20traffic%20management%20or%20detour%20planning%20consultancy."
+class="btn btn-outline" target="_blank">WhatsApp Enquiry</a>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-title">
+<div class="green-label">OUR SERVICES</div>
+<h2>Traffic Management Solutions</h2>
+<p>Practical traffic planning support for projects requiring temporary
+changes to roads, traffic movement, access and construction activities.</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">🚧</div>
+<h3>Traffic Management Plans (TMP)</h3>
+<p>Planning and preparation of traffic management arrangements
+for construction and infrastructure activities affecting traffic.</p>
+</div>
+
+<div class="card">
+<div class="icon">↪️</div>
+<h3>Traffic Diversion Planning</h3>
+<p>Assessment and planning of alternative routes, diversion
+arrangements and traffic movement during construction.</p>
+</div>
+
+<div class="card">
+<div class="icon">🚦</div>
+<h3>Work-Zone Traffic Planning</h3>
+<p>Traffic arrangements around construction work zones,
+road works and temporary work areas.</p>
+</div>
+
+<div class="card">
+<div class="icon">⛔</div>
+<h3>Road Closure Planning</h3>
+<p>Planning considerations for temporary road closures,
+partial closures and restricted traffic movement.</p>
+</div>
+
+<div class="card">
+<div class="icon">🚶</div>
+<h3>Pedestrian Management</h3>
+<p>Temporary pedestrian access, crossing arrangements and
+pedestrian movement considerations around work zones.</p>
+</div>
+
+<div class="card">
+<div class="icon">🏗️</div>
+<h3>Construction Traffic Management</h3>
+<p>Traffic arrangements supporting construction logistics,
+site access, construction activities and project execution.</p>
+</div>
+
+<div class="card">
+<div class="icon">🛣️</div>
+<h3>Road & Highway Works</h3>
+<p>Traffic planning support for road widening, rehabilitation,
+pavement works, highway construction and maintenance.</p>
+</div>
+
+<div class="card">
+<div class="icon">🚇</div>
+<h3>Metro & Infrastructure Projects</h3>
+<p>Traffic diversion and temporary traffic planning for metro,
+utility, major infrastructure and urban construction projects.</p>
+</div>
+
+<div class="card">
+<div class="icon">🦺</div>
+<h3>Traffic Safety Review</h3>
+<p>Review of temporary traffic arrangements, warning signs,
+traffic control considerations and work-zone safety issues.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="light">
+<div class="container two-col">
+
+<div class="content">
+<div class="green-label">PROJECT APPLICATIONS</div>
+<h2>Where Traffic Management Is Required</h2>
+<p>Traffic management and diversion planning can support
+projects such as:</p>
+<ul class="list">
+<li>Road and highway construction</li>
+<li>Road widening and rehabilitation</li>
+<li>Metro rail and station construction</li>
+<li>Flyover and bridge construction</li>
+<li>Utility installation and underground works</li>
+<li>Water supply and drainage projects</li>
+<li>Building construction adjacent to roads</li>
+<li>Urban infrastructure development</li>
+<li>Temporary event and access management</li>
+<li>Road maintenance and repair activities</li>
+</ul>
+</div>
+
+<div class="highlight">
+<h2>Keep Traffic Moving During Construction</h2>
+<p>Construction activities can create congestion, access
+restrictions, conflicts and safety risks.</p>
+<br>
+<p>Effective traffic planning considers construction
+requirements together with road users, pedestrians,
+accessibility, surrounding roads and site conditions.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-title">
+<div class="green-label">OUR APPROACH</div>
+<h2>Traffic Management Planning Process</h2>
+<p>Each project is assessed according to the construction scope,
+road conditions, traffic characteristics and required deliverables.</p>
+</div>
+
+<div class="process-grid">
+<div class="process-card">
+<strong>STEP 01</strong>
+<h3>Project Review</h3>
+<p>Understand construction activities, project location,
+work programme, road conditions and constraints.</p>
+</div>
+
+<div class="process-card">
+<strong>STEP 02</strong>
+<h3>Site & Traffic Assessment</h3>
+<p>Review existing traffic, site access, affected road users,
+surrounding routes and available information.</p>
+</div>
+
+<div class="process-card">
+<strong>STEP 03</strong>
+<h3>Traffic Arrangement</h3>
+<p>Develop proposed traffic staging, diversion routes,
+work-zone arrangements and traffic control concepts.</p>
+</div>
+
+<div class="process-card">
+<strong>STEP 04</strong>
+<h3>Plan & Documentation</h3>
+<p>Prepare the agreed traffic management documentation,
+drawings, recommendations and supporting information.</p>
+</div>
+</div>
+</section>
+
+<section class="light">
+<div class="container two-col">
+
+<div class="content">
+<div class="green-label">POTENTIAL DELIVERABLES</div>
+<h2>Traffic Management Documentation</h2>
+<p>Deliverables can be developed to suit the project scope
+and client or authority requirements.</p>
+<ul class="list">
+<li>Traffic Management Plan</li>
+<li>Traffic diversion plan</li>
+<li>Work-zone traffic arrangement drawings</li>
+<li>Construction staging considerations</li>
+<li>Temporary road closure plan</li>
+<li>Pedestrian management arrangements</li>
+<li>Traffic sign and control layout</li>
+<li>Traffic route assessment</li>
+<li>Construction access considerations</li>
+<li>Traffic management recommendations</li>
+</ul>
+</div>
+
+<div class="content">
+<div class="green-label">PROJECT-SPECIFIC PLANNING</div>
+<h2>Plans Developed for Your Work Scope</h2>
+<p>Traffic management requirements vary depending on
+the road, construction activity, available space,
+project duration and traffic conditions.</p>
+<p>We can discuss your project requirements and determine
+the appropriate scope of traffic assessment, planning,
+drawings and documentation.</p>
+<a href="contact.html" class="btn btn-green">Request Consultancy</a>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="notice">
+<h3>Important Project Consideration</h3>
+<p>Traffic management plans and diversion arrangements must be reviewed
+against actual site conditions, applicable regulations, road authority
+requirements and project-specific safety requirements. Approval, implementation
+and traffic control responsibilities are subject to the relevant project and
+authority arrangements.</p>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+<h2>Planning Road Works or Construction?</h2>
+<p>Share your project location, construction scope, road details
+and expected work duration. CityPlanners can help you identify
+the appropriate traffic management planning requirements.</p>
+<a href="contact.html" class="btn btn-green">Send Project Enquiry</a>
+<a href="https://wa.me/919962105943?text=Hello%20CityPlanners%2C%20I%20need%20traffic%20management%20consultancy%20for%20my%20project."
+class="btn btn-outline" target="_blank">WhatsApp CityPlanners</a>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+
+<div>
+<h3>CITYPLANNERS</h3>
+<p>Traffic, Transportation, Airports, Buildings,
+Roads and Infrastructure Consultancy.</p>
+</div>
+
+<div>
+<h4>Services</h4>
+<ul>
+<li><a href="traffic-studies.html">Traffic Studies</a></li>
+<li><a href="petrol-pump.html">Petrol Pump Consultancy</a></li>
+<li><a href="traffic-management.html">Traffic Management</a></li>
+<li><a href="roads-highways.html">Roads & Highways</a></li>
+<li><a href="land-survey.html">Land Surveys</a></li>
+</ul>
+</div>
+
+<div>
+<h4>Contact</h4>
+<p>Chennai, Tamil Nadu, India</p>
+<p><a href="mailto:admin@cityplanners.in">admin@cityplanners.in</a></p>
+<p><a href="tel:+919962105943">+91 99621 05943</a></p>
+<p><a href="contact.html">Contact Us</a></p>
+</div>
+
+</div>
+
+<div class="copyright">
+© <span id="year"></span> CityPlanners. All Rights Reserved.
+</div>
+</div>
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/919962105943?text=Hello%20CityPlanners%2C%20I%20need%20traffic%20management%20consultancy."
+target="_blank">WhatsApp</a>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
