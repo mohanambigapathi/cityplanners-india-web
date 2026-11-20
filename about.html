@@ -1,0 +1,654 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About CityPlanners | Infrastructure & Transportation Consultancy</title>
+<meta name="description" content="Learn about CityPlanners, an engineering and infrastructure consultancy specialising in transportation planning, traffic engineering, roads, highways, construction management and infrastructure development.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #243447;
+    line-height: 1.7;
+}
+
+header {
+    background: #12345a;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #f4c542;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #f4c542;
+}
+
+.hero {
+    background: linear-gradient(135deg, #12345a, #21618b);
+    color: white;
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 18px;
+    color: #e8f1f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 55px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    color: #12345a;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.section-title p {
+    color: #667788;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.about-text h2 {
+    color: #12345a;
+    margin-bottom: 18px;
+    font-size: 29px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.profile-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid #2d8b57;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+}
+
+.profile-box h3 {
+    color: #12345a;
+    margin-bottom: 15px;
+}
+
+.profile-box ul {
+    padding-left: 20px;
+}
+
+.profile-box li {
+    margin-bottom: 10px;
+}
+
+.highlight-section {
+    background: #eaf2f8;
+    padding: 60px 8%;
+}
+
+.highlight-section h2 {
+    color: #12345a;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.highlight-section p {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-top: 4px solid #2d8b57;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.04);
+}
+
+.card h3 {
+    color: #12345a;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #596a7a;
+    font-size: 15px;
+}
+
+.experience {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    border-left: 5px solid #21618b;
+    margin-bottom: 20px;
+}
+
+.experience h3 {
+    color: #12345a;
+    margin-bottom: 10px;
+}
+
+.qualifications {
+    background: #12345a;
+    color: white;
+    padding: 60px 8%;
+}
+
+.qualifications h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.qualifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.qualification {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 22px;
+    border-radius: 10px;
+}
+
+.qualification h3 {
+    color: #f4c542;
+    margin-bottom: 10px;
+}
+
+.qualification p {
+    color: #e2eaf1;
+    font-size: 14px;
+}
+
+.approach {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.approach h2 {
+    color: #12345a;
+    margin-bottom: 20px;
+}
+
+.approach p {
+    margin-bottom: 15px;
+}
+
+.cta {
+    background: #12345a;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #f4c542;
+    color: #12345a;
+    padding: 13px 26px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #ffd95e;
+}
+
+.btn-secondary {
+    background: white;
+    color: #12345a;
+}
+
+footer {
+    background: #0b2540;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #f4c542;
+    text-decoration: none;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25a56a;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 40px 18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CITY<span>PLANNERS</span></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>About CityPlanners</h1>
+    <p>
+        Engineering, transportation planning and infrastructure consultancy
+        focused on practical solutions, informed decision-making and
+        sustainable development.
+    </p>
+</section>
+
+<section class="container">
+    <div class="about-grid">
+
+        <div class="about-text">
+            <h2>Planning Infrastructure for a Better Tomorrow</h2>
+
+            <p>
+                CityPlanners is an engineering and infrastructure consultancy
+                providing professional support in traffic and transportation
+                planning, infrastructure development, roads and highways,
+                construction management, land surveying and project assessment.
+            </p>
+
+            <p>
+                Our approach combines engineering fundamentals, field
+                observations, technical analysis and practical project
+                experience to help clients understand their project
+                requirements and make informed decisions.
+            </p>
+
+            <p>
+                We support projects at different stages, from preliminary
+                assessment and feasibility studies through technical planning,
+                site assessment, traffic analysis and construction-related
+                consultancy.
+            </p>
+        </div>
+
+        <div class="profile-box">
+            <h3>Our Consultancy Focus</h3>
+
+            <ul>
+                <li>Traffic & Transportation Planning</li>
+                <li>Traffic Impact Assessment</li>
+                <li>Petrol Pump & Highway Access Consultancy</li>
+                <li>Traffic Management & Detour Planning</li>
+                <li>Roads & Highway Infrastructure</li>
+                <li>Construction & Project Management</li>
+                <li>Airport Infrastructure</li>
+                <li>Land Surveying & Site Assessment</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section class="highlight-section">
+    <h2>Professional Experience & Industry Exposure</h2>
+
+    <p>
+        Our professional experience includes infrastructure, transportation
+        and construction-related assignments in India and the Middle East,
+        including Saudi Arabia and Qatar. Exposure to multidisciplinary
+        engineering environments and project delivery has helped develop
+        an understanding of the technical, operational and construction
+        challenges faced by infrastructure projects.
+    </p>
+</section>
+
+<section class="container">
+
+    <div class="section-title">
+        <h2>Areas of Expertise</h2>
+        <p>Professional consultancy support across multiple infrastructure sectors.</p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Traffic & Transportation</h3>
+            <p>
+                Traffic surveys, traffic impact studies, transportation
+                planning, junction analysis, parking studies and mobility
+                assessment.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Roads & Highways</h3>
+            <p>
+                Highway planning, access assessment, road infrastructure
+                consultancy, development proposals and highway-related
+                technical assessment.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Traffic Management</h3>
+            <p>
+                Temporary Traffic Management Plans, traffic diversion plans,
+                work-zone planning, construction traffic arrangements and
+                road safety considerations.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Construction Management</h3>
+            <p>
+                Construction coordination, project monitoring, site
+                assessment, construction planning and infrastructure
+                project management support.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Airport Infrastructure</h3>
+            <p>
+                Airport planning exposure, transportation planning,
+                infrastructure coordination and airport-related
+                development consultancy.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Survey & Site Assessment</h3>
+            <p>
+                Topographic surveys, land surveys, site measurements,
+                mapping, terrain assessment and survey-based project
+                support.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="container">
+
+    <div class="section-title">
+        <h2>Professional Project Experience</h2>
+        <p>Experience across engineering, infrastructure and project environments.</p>
+    </div>
+
+    <div class="experience">
+        <h3>Transportation & Highway Projects</h3>
+        <p>
+            Professional exposure to roads, highways, traffic planning,
+            transportation infrastructure and related engineering activities
+            in India and overseas.
+        </p>
+    </div>
+
+    <div class="experience">
+        <h3>Traffic Diversion & Temporary Traffic Management</h3>
+        <p>
+            Experience associated with traffic diversions, temporary traffic
+            arrangements, construction work zones and traffic management
+            planning for infrastructure projects, including Metro-related
+            works in Saudi Arabia.
+        </p>
+    </div>
+
+    <div class="experience">
+        <h3>Construction & Project Management</h3>
+        <p>
+            Project coordination and construction management experience
+            involving infrastructure development and project execution
+            environments, including assignments in Qatar.
+        </p>
+    </div>
+
+    <div class="experience">
+        <h3>International Engineering Environment</h3>
+        <p>
+            Professional experience associated with engineering and
+            infrastructure organisations and projects across India and
+            the Middle East.
+        </p>
+    </div>
+
+</section>
+
+<section class="qualifications">
+
+    <h2>Professional Qualifications & Education</h2>
+
+    <div class="qualifications-grid">
+
+        <div class="qualification">
+            <h3>B.E. Civil Engineering</h3>
+            <p>College of Engineering, Guindy</p>
+        </div>
+
+        <div class="qualification">
+            <h3>Masters in Urban Planning</h3>
+            <p>Advanced education in urban planning and development.</p>
+        </div>
+
+        <div class="qualification">
+            <h3>GIS & Management</h3>
+            <p>Post Graduate Diploma in GIS and Management.</p>
+        </div>
+
+        <div class="qualification">
+            <h3>Multimodal Transport</h3>
+            <p>Diploma in Multimodal Transport.</p>
+        </div>
+
+        <div class="qualification">
+            <h3>Airport Planning & Management</h3>
+            <p>Fellowship in Airport Planning and Management, Denmark.</p>
+        </div>
+
+        <div class="qualification">
+            <h3>Sustainable Urban Transport</h3>
+            <p>
+                Sustainable Urban Transport Planning Certificate,
+                IIT Chennai.
+            </p>
+        </div>
+
+        <div class="qualification">
+            <h3>Professional Membership</h3>
+            <p>
+                Member, Chartered Institution of Highways & Transportation
+                (CIHT), United Kingdom.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container">
+    <div class="approach">
+
+        <h2>Our Approach</h2>
+
+        <p>
+            Every project is different. We believe consultancy should begin
+            with understanding the client's requirement, project location,
+            available information, applicable standards and practical
+            constraints.
+        </p>
+
+        <p>
+            We follow a project-oriented approach, identifying the scope,
+            evaluating available information, conducting site assessments
+            where required, analysing relevant engineering considerations
+            and developing recommendations appropriate to the project.
+        </p>
+
+        <p>
+            Our objective is to provide clear, practical and technically
+            useful consultancy services without unnecessary complexity.
+        </p>
+
+    </div>
+</section>
+
+<section class="cta">
+
+    <h2>Have an Infrastructure Project?</h2>
+
+    <p>
+        Let's discuss your requirements and identify the right
+        consultancy approach for your project.
+    </p>
+
+    <a class="btn"
+       href="https://wa.me/919962105943?text=Hello%20CityPlanners%2C%20I%20would%20like%20to%20discuss%20a%20consultancy%20project."
+       target="_blank">
+       Discuss Your Project
+    </a>
+
+    <a class="btn btn-secondary" href="contact.html">
+       Contact CityPlanners
+    </a>
+
+</section>
+
+<footer>
+    <p><strong>CITYPLANNERS</strong></p>
+    <p>Infrastructure | Transportation | Engineering Consultancy</p>
+    <p>Chennai, Tamil Nadu, India</p>
+    <p>
+        Email:
+        <a href="mailto:admin@cityplanners.in">admin@cityplanners.in</a>
+    </p>
+    <p>
+        Phone:
+        <a href="tel:+919962105943">+91 99621 05943</a>
+    </p>
+    <p>© <span id="year"></span> CityPlanners. All rights reserved.</p>
+</footer>
+
+<a class="whatsapp"
+   href="https://wa.me/919962105943?text=Hello%20CityPlanners"
+   target="_blank">
+   WhatsApp
+</a>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
