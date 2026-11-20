@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Services | CityPlanners Infrastructure Consultancy</title>
+<meta name="description" content="Explore CityPlanners consultancy services in traffic studies, petrol pump feasibility, traffic management, roads, highways, airport planning, construction, land surveying and building development.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #243447;
+    line-height: 1.7;
+    background: #f5f7fa;
+}
+
+header {
+    background: #12345a;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #f4c542;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #f4c542;
+}
+
+.hero {
+    background: linear-gradient(135deg, #12345a, #21618b);
+    color: white;
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 18px;
+    color: #e8f1f8;
+}
+
+.container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 55px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    color: #12345a;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.section-title p {
+    color: #667788;
+    max-width: 850px;
+    margin: auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 10px;
+    padding: 28px;
+    border-top: 4px solid #2d8b57;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 9px 24px rgba(0,0,0,0.10);
+}
+
+.service-icon {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.service-card h3 {
+    color: #12345a;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.service-card p {
+    color: #596a7a;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.service-card a {
+    color: #21804d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.service-card a:hover {
+    text-decoration: underline;
+}
+
+.highlight {
+    background: #eaf2f8;
+    padding: 60px 8%;
+}
+
+.highlight h2 {
+    color: #12345a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.highlight p {
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
+}
+
+.cta {
+    background: #12345a;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #f4c542;
+    color: #12345a;
+    padding: 13px 26px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.btn-secondary {
+    background: white;
+    color: #12345a;
+}
+
+footer {
+    background: #0b2540;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #f4c542;
+    text-decoration: none;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25a56a;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .container {
+        padding: 40px 18px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CITY<span>PLANNERS</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <h1>Our Consultancy Services</h1>
+
+    <p>
+        Traffic, transportation, infrastructure, construction and
+        engineering consultancy services supporting development projects,
+        businesses, investors and infrastructure professionals.
+    </p>
+
+</section>
+
+<section class="container">
+
+    <div class="section-title">
+        <h2>Explore Our Services</h2>
+        <p>
+            Select a service to learn more about our consultancy scope,
+            technical approach and project support.
+        </p>
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <div class="service-icon">📊</div>
+            <h3>Traffic & Transportation Studies</h3>
+            <p>
+                Traffic surveys, classified counts, junction surveys,
+                traffic impact assessments, parking studies and
+                transportation analysis.
+            </p>
+            <a href="traffic-studies.html">Explore Traffic Studies →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">⛽</div>
+            <h3>Petrol Pump Consultancy</h3>
+            <p>
+                Site feasibility, traffic assessment, highway access,
+                fuel station development support and traffic-related
+                approval documentation.
+            </p>
+            <a href="petrol-pump.html">Explore Petrol Pump Services →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🚧</div>
+            <h3>Traffic Management & Detour Planning</h3>
+            <p>
+                Temporary traffic management, construction diversions,
+                road closure planning, work-zone traffic arrangements
+                and traffic management plans.
+            </p>
+            <a href="traffic-management.html">Explore Traffic Management →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🛣️</div>
+            <h3>Roads & Highways Consultancy</h3>
+            <p>
+                Road planning, highway assessment, road access,
+                junction assessment, road improvement and
+                infrastructure consultancy.
+            </p>
+            <a href="roads-highways.html">Explore Roads & Highways →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🏗️</div>
+            <h3>Road Construction & Project Management</h3>
+            <p>
+                Construction planning, project coordination,
+                progress monitoring, site management and
+                infrastructure project support.
+            </p>
+            <a href="road-construction.html">Explore Construction Services →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📐</div>
+            <h3>Land & Topographic Survey</h3>
+            <p>
+                Land measurement, topographic surveys, site mapping,
+                contour surveys, construction survey support
+                and field data collection.
+            </p>
+            <a href="land-survey.html">Explore Survey Services →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">✈️</div>
+            <h3>Airport Planning & Infrastructure</h3>
+            <p>
+                Airport access, landside transportation,
+                terminal circulation, parking assessment
+                and airport infrastructure planning.
+            </p>
+            <a href="airports.html">Explore Airport Consultancy →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🏢</div>
+            <h3>Buildings & Development Consultancy</h3>
+            <p>
+                Site development assessment, building access,
+                parking, circulation, traffic impact and
+                infrastructure coordination.
+            </p>
+            <a href="buildings.html">Explore Building Consultancy →</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="highlight">
+
+    <h2>Consultancy for Different Project Requirements</h2>
+
+    <p>
+        Whether you are planning a commercial development, fuel station,
+        road infrastructure project, building development, airport project
+        or construction activity, CityPlanners can help identify the
+        required assessments, surveys, planning inputs and consultancy
+        scope based on your project requirements.
+    </p>
+
+</section>
+
+<section class="cta">
+
+    <h2>Not Sure Which Service You Need?</h2>
+
+    <p>
+        Tell us about your project, location and requirement.
+        We can help identify the appropriate consultancy service
+        and scope of work.
+    </p>
+
+    <a class="btn"
+       href="https://wa.me/919962105943?text=Hello%20CityPlanners%2C%20I%20need%20help%20identifying%20the%20right%20consultancy%20service%20for%20my%20project."
+       target="_blank">
+       Discuss Your Project on WhatsApp
+    </a>
+
+    <a class="btn btn-secondary" href="contact.html">
+       Contact Us
+    </a>
+
+</section>
+
+<footer>
+
+    <p><strong>CITYPLANNERS</strong></p>
+
+    <p>Traffic | Transportation | Roads | Airports | Infrastructure</p>
+
+    <p>Chennai, Tamil Nadu, India</p>
+
+    <p>
+        Email:
+        <a href="mailto:admin@cityplanners.in">admin@cityplanners.in</a>
+    </p>
+
+    <p>
+        Phone:
+        <a href="tel:+919962105943">+91 99621 05943</a>
+    </p>
+
+    <p>© <span id="year"></span> CityPlanners. All rights reserved.</p>
+
+</footer>
+
+<a class="whatsapp"
+   href="https://wa.me/919962105943?text=Hello%20CityPlanners"
+   target="_blank">
+   WhatsApp
+</a>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
