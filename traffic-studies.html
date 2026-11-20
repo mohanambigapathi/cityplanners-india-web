@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Traffic & Transportation Studies | CityPlanners</title>
+<meta name="description" content="CityPlanners provides traffic surveys, classified traffic volume counts, turning movement surveys, traffic impact assessments, junction analysis, parking studies and transportation consultancy.">
+
+<style>
+:root {
+    --navy:#0b1f3a;
+    --blue:#123c70;
+    --green:#25a56a;
+    --yellow:#f4c542;
+    --light:#f4f7fb;
+    --text:#243447;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.7}
+a{text-decoration:none}
+.container{width:92%;max-width:1200px;margin:auto}
+
+header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.header-inner{display:flex;justify-content:space-between;align-items:center;padding:17px 0;gap:20px}
+.logo{font-size:28px;font-weight:800;color:var(--navy)}
+.logo span{color:var(--green)}
+.tagline{font-size:11px;letter-spacing:1px;color:#64748b}
+nav{display:flex;align-items:center;gap:22px}
+nav a{color:var(--navy);font-size:14px;font-weight:bold}
+nav a:hover{color:var(--green)}
+.contact-btn{background:var(--green);color:white;padding:10px 17px;border-radius:6px}
+
+.hero{background:linear-gradient(120deg,var(--navy),var(--blue));color:white;padding:75px 0}
+.hero-content{max-width:850px}
+.eyebrow{color:var(--yellow);font-size:13px;font-weight:bold;letter-spacing:2px}
+.hero h1{font-size:43px;line-height:1.2;margin:18px 0}
+.hero p{color:#d9e6f5;font-size:18px;margin-bottom:25px}
+.btn{display:inline-block;padding:13px 22px;border-radius:6px;font-weight:bold;margin:5px 8px 5px 0}
+.btn-green{background:var(--green);color:white}
+.btn-outline{border:1px solid white;color:white}
+
+section{padding:65px 0}
+.section-title{text-align:center;margin-bottom:38px}
+.section-title h2{font-size:32px;color:var(--navy);margin:8px 0}
+.section-title p{max-width:760px;margin:auto;color:#64748b}
+.green-label{color:var(--green);font-size:13px;font-weight:bold;letter-spacing:2px}
+
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;border:1px solid #e5eaf1;border-radius:10px;padding:25px}
+.card h3{color:var(--navy);margin-bottom:10px;font-size:19px}
+.card p{font-size:14px;color:#64748b}
+.icon{font-size:28px;margin-bottom:10px}
+
+.light-section{background:var(--light)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:start}
+.content h2{color:var(--navy);font-size:29px;margin-bottom:18px}
+.content p{color:#64748b;margin-bottom:14px}
+.list{list-style:none;margin-top:15px}
+.list li{margin-bottom:10px}
+.list li::before{content:"✓";color:var(--green);font-weight:bold;margin-right:10px}
+
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.process-card{background:var(--light);border-radius:10px;padding:22px}
+.process-card strong{display:block;color:var(--green);font-size:13px;margin-bottom:8px}
+.process-card h3{color:var(--navy);font-size:18px;margin-bottom:8px}
+.process-card p{font-size:14px;color:#64748b}
+
+.highlight{background:var(--navy);color:white;border-radius:12px;padding:35px}
+.highlight h2{margin-bottom:15px}
+.highlight p{color:#d4e0ef}
+
+.cta{background:var(--navy);color:white;text-align:center}
+.cta h2{font-size:32px;margin-bottom:15px}
+.cta p{max-width:750px;margin:0 auto 22px;color:#d1deee}
+
+footer{background:#071426;color:#cbd5e1;padding:40px 0 20px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px;padding-bottom:25px}
+footer h3,footer h4{color:white;margin-bottom:12px}
+footer p,footer li{font-size:14px;margin-bottom:8px}
+footer ul{list-style:none}
+footer a{color:#cbd5e1}
+footer a:hover{color:var(--yellow)}
+.copyright{border-top:1px solid #23354d;padding-top:18px;text-align:center;font-size:13px}
+
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25d366;color:white;padding:14px 18px;border-radius:40px;font-weight:bold;z-index:1000;box-shadow:0 4px 15px rgba(0,0,0,.2)}
+
+@media(max-width:900px){
+.service-grid{grid-template-columns:repeat(2,1fr)}
+.process-grid{grid-template-columns:repeat(2,1fr)}
+.two-col{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+.header-inner{flex-direction:column;align-items:flex-start}
+nav{flex-wrap:wrap;gap:12px}
+.hero{padding:55px 0}
+.hero h1{font-size:33px}
+.hero p{font-size:16px}
+.service-grid,.process-grid{grid-template-columns:1fr}
+.section-title h2{font-size:27px}
+.footer-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container header-inner">
+<div>
+<a href="index.html" class="logo">CITY<span>PLANNERS</span></a>
+<div class="tagline">TRAFFIC · TRANSPORTATION · INFRASTRUCTURE</div>
+</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="index.html#services">Services</a>
+<a href="contact.html" class="contact-btn">Contact Us</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container hero-content">
+<div class="eyebrow">TRAFFIC ENGINEERING & TRANSPORTATION PLANNING</div>
+<h1>Traffic & Transportation Studies</h1>
+<p>
+Traffic surveys, engineering assessments and transportation studies
+to support development projects, road infrastructure, commercial
+facilities and traffic planning decisions.
+</p>
+<a href="contact.html" class="btn btn-green">Request a Traffic Study</a>
+<a href="https://wa.me/919962105943?text=Hello%20CityPlanners%2C%20I%20need%20a%20traffic%20study."
+class="btn btn-outline" target="_blank">WhatsApp Enquiry</a>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-title">
+<div class="green-label">OUR TECHNICAL SERVICES</div>
+<h2>Traffic & Transportation Consultancy</h2>
+<p>Traffic data collection, analysis and engineering assessments
+for project planning, development approvals and infrastructure decisions.</p>
+</div>
+
+<div class="service-grid">
+
+<div class="card">
+<div class="icon">🚦</div>
+<h3>Traffic Volume Count Surveys</h3>
+<p>Traffic volume data collection to understand traffic demand,
+road usage, hourly variation and daily traffic patterns.</p>
+</div>
+
+<div class="card">
+<div class="icon">🚗</div>
+<h3>Classified Traffic Surveys</h3>
+<p>Vehicle classification surveys covering cars, two-wheelers,
+buses, trucks, commercial vehicles and other categories.</p>
+</div>
+
+<div class="card">
+<div class="icon">↔️</div>
+<h3>Turning Movement Counts</h3>
+<p>Intersection movement counts to assess turning traffic,
+junction demand, movement distribution and peak periods.</p>
+</div>
+
+<div class="card">
+<div class="icon">📍</div>
+<h3>Origin–Destination Studies</h3>
+<p>Study of trip patterns, travel movements and traffic
+distribution to support transport planning.</p>
+</div>
+
+<div class="card">
+<div class="icon">🚶</div>
+<h3>Pedestrian Surveys</h3>
+<p>Pedestrian volume assessments and crossing movement
+observations for accessibility and safety planning.</p>
+</div>
+
+<div class="card">
+<div class="icon">🅿️</div>
+<h3>Parking Studies</h3>
+<p>Parking demand, occupancy, turnover, accumulation
+and parking facility assessments.</p>
+</div>
+
+<div class="card">
+<div class="icon">📊</div>
+<h3>Traffic Impact Assessment</h3>
+<p>Assessment of development-generated traffic, access impacts,
+surrounding road network and traffic mitigation requirements.</p>
+</div>
+
+<div class="card">
+<div class="icon">🏙️</div>
+<h3>Junction & Corridor Analysis</h3>
+<p>Traffic analysis of intersections, corridors, access roads,
+road capacity and network performance.</p>
+</div>
+
+<div class="card">
+<div class="icon">📈</div>
+<h3>Speed & Queue Studies</h3>
+<p>Speed distribution, queue lengths, delay observations
+and operational assessments.</p>
+</div>
+
+<div class="card">
+<div class="icon">⚖️</div>
+<h3>PCU & Capacity Analysis</h3>
+<p>Traffic conversion, peak-hour analysis, traffic composition
+and capacity-related assessments.</p>
+</div>
+
+<div class="card">
+<div class="icon">🛣️</div>
+<h3>Highway Traffic Studies</h3>
+<p>Traffic assessment and data collection supporting highway,
+road improvement and access-related projects.</p>
+</div>
+
+<div class="card">
+<div class="icon">🛡️</div>
+<h3>Road Safety Assessment</h3>
+<p>Identification of road safety issues, conflict areas,
+traffic circulation concerns and potential improvements.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="light-section">
+<div class="container two-col">
+
+<div class="content">
+<div class="green-label">PROJECT APPLICATIONS</div>
+<h2>Where Our Traffic Studies Are Used</h2>
+<p>Traffic studies support project planning, development assessment,
+infrastructure design and operational decision-making.</p>
+
+<ul class="list">
+<li>Petrol pumps and fuel stations</li>
+<li>Commercial developments and shopping centres</li>
+<li>Residential and mixed-use developments</li>
+<li>Industrial and logistics facilities</li>
+<li>Hotels, hospitals and educational institutions</li>
+<li>Roads, highways and junction improvements</li>
+<li>Airport and transport infrastructure</li>
+<li>Construction and infrastructure projects</li>
+</ul>
+</div>
+
+<div class="highlight">
+<h2>Reliable Traffic Data for Better Decisions</h2>
+<p>Traffic surveys and assessments help project owners,
+developers, consultants and engineering teams understand
+existing traffic conditions and identify project requirements.</p>
+<br>
+<p>Study scope, survey locations, duration and deliverables
+are developed according to the project requirements.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-title">
+<div class="green-label">OUR APPROACH</div>
+<h2>How We Undertake a Traffic Study</h2>
+<p>Our work is structured to understand project requirements,
+collect relevant data and develop practical findings.</p>
+</div>
+
+<div class="process-grid">
+<div class="process-card">
+<strong>STEP 01</strong>
+<h3>Project Understanding</h3>
+<p>Review project location, development details,
+objectives and study requirements.</p>
+</div>
+
+<div class="process-card">
+<strong>STEP 02</strong>
+<h3>Survey Planning</h3>
+<p>Identify survey locations, data requirements,
+survey periods and collection methodology.</p>
+</div>
+
+<div class="process-card">
+<strong>STEP 03</strong>
+<h3>Data Collection & Analysis</h3>
+<p>Collect traffic data and undertake relevant
+engineering analysis.</p>
+</div>
+
+<div class="process-card">
+<strong>STEP 04</strong>
+<h3>Report & Recommendations</h3>
+<p>Present findings, assessment, conclusions
+and recommendations in a suitable report.</p>
+</div>
+</div>
+</section>
+
+<section class="light-section">
+<div class="container two-col">
+<div class="content">
+<div class="green-label">PROJECT-SPECIFIC SCOPE</div>
+<h2>Study Scope & Deliverables</h2>
+<p>The scope of each traffic study is tailored to the project.
+Depending on requirements, deliverables may include:</p>
+<ul class="list">
+<li>Traffic survey data and summary tables</li>
+<li>Traffic composition and peak-hour analysis</li>
+<li>Traffic flow and movement analysis</li>
+<li>PCU calculations where applicable</li>
+<li>Capacity and operational assessment</li>
+<li>Traffic impact findings</li>
+<li>Access and circulation observations</li>
+<li>Engineering recommendations</li>
+<li>Technical report and supporting figures</li>
+</ul>
+</div>
+
+<div class="content">
+<div class="green-label">TAILORED CONSULTANCY</div>
+<h2>Not Every Project Requires the Same Study</h2>
+<p>Traffic survey requirements depend on the project type,
+location, surrounding road conditions, development size
+and the requirements of the relevant authority.</p>
+<p>We can help identify the appropriate study scope
+before survey deployment and reporting.</p>
+<a href="contact.html" class="btn btn-green">Discuss Your Requirement</a>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+<h2>Planning a Traffic or Transportation Study?</h2>
+<p>Share your project location, development type and requirements.
+We can discuss the suitable traffic survey and assessment scope.</p>
+<a href="contact.html" class="btn btn-green">Request a Consultancy Proposal</a>
+<a href="https://wa.me/919962105943?text=Hello%20CityPlanners%2C%20I%20would%20like%20to%20discuss%20a%20traffic%20study."
+class="btn btn-outline" target="_blank">WhatsApp CityPlanners</a>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div>
+<h3>CITYPLANNERS</h3>
+<p>Traffic, Transportation, Airports, Buildings,
+Roads and Infrastructure Consultancy.</p>
+</div>
+
+<div>
+<h4>Services</h4>
+<ul>
+<li><a href="traffic-studies.html">Traffic Studies</a></li>
+<li><a href="petrol-pump.html">Petrol Pump Consultancy</a></li>
+<li><a href="traffic-management.html">Traffic Management</a></li>
+<li><a href="roads-highways.html">Roads & Highways</a></li>
+</ul>
+</div>
+
+<div>
+<h4>Contact</h4>
+<p>Chennai, Tamil Nadu, India</p>
+<p><a href="mailto:admin@cityplanners.in">admin@cityplanners.in</a></p>
+<p><a href="tel:+919962105943">+91 99621 05943</a></p>
+<p><a href="contact.html">Contact Us</a></p>
+</div>
+</div>
+
+<div class="copyright">
+© <span id="year"></span> CityPlanners. All Rights Reserved.
+</div>
+</div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919962105943?text=Hello%20CityPlanners%2C%20I%20have%20a%20traffic%20study%20enquiry." target="_blank">WhatsApp</a>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
