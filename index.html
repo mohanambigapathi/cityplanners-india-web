@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CityPlanners | Contact & Infrastructure Consultancy</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;color:#14294b;background:#f5f8fc}
+a{text-decoration:none}
+header{background:#fff;padding:16px 5%;display:flex;align-items:center;
+justify-content:space-between;gap:20px;flex-wrap:wrap;box-shadow:0 2px 10px #ddd}
+.logo{font-size:27px;font-weight:800;color:#12335e}
+.logo span{color:#009b78}
+nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+nav a{color:#14294b;font-weight:600}
+.btn{display:inline-block;padding:13px 20px;border-radius:8px;font-weight:bold}
+.btn-blue{background:#123b70;color:#fff}
+.btn-green{background:#13a451;color:#fff}
+.hero{background:linear-gradient(120deg,#082c56,#124d80);color:white;padding:55px 5%;
+display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.hero h1{font-size:42px;margin-bottom:15px}
+.hero h1 span{color:#38d27b}
+.hero p{font-size:18px;line-height:1.6;max-width:600px}
+.services{background:#fff;margin:-25px auto 30px;position:relative;width:92%;
+padding:20px;border-radius:20px;box-shadow:0 5px 20px #0001;
+display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px}
+.service{text-align:center;padding:14px 8px;border-right:1px solid #ddd;font-weight:bold}
+.service .icon{font-size:27px;margin-bottom:8px}
+.container{max-width:1400px;margin:auto;padding:20px 4%}
+.layout{display:grid;grid-template-columns:1.6fr 1fr;gap:25px}
+.card{background:#fff;border-radius:16px;padding:25px;box-shadow:0 4px 16px #0001}
+.card h2{margin-bottom:22px;font-size:27px}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field.full{grid-column:1/-1}
+label{font-weight:bold;font-size:14px}
+input,select,textarea{width:100%;padding:13px;border:1px solid #bdc9d9;
+border-radius:8px;font-size:15px;background:#fff}
+textarea{min-height:120px;resize:vertical}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.contactbox{margin-bottom:15px;padding:18px;border:1px solid #e0e7ef;
+border-radius:12px;display:flex;gap:14px;align-items:flex-start}
+.contacticon{background:#e3f8ee;padding:13px;border-radius:10px;font-size:23px}
+.contactbox h3{margin-bottom:6px}
+.contactbox p{line-height:1.5;color:#34465f}
+.map{width:100%;height:250px;border:0;border-radius:12px}
+.steps{margin-top:30px;background:#eaf3ff;border-radius:18px;padding:25px;
+display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px}
+.steps h2{grid-column:1/-1}
+.step{display:flex;gap:12px}
+.number{background:#079c6f;color:white;width:35px;height:35px;border-radius:50%;
+display:flex;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0}
+footer{background:#082b52;color:white;padding:28px 5%;text-align:center;margin-top:35px}
+.floating{position:fixed;right:22px;bottom:22px;background:#19b65a;color:#fff;
+border-radius:50%;width:62px;height:62px;display:flex;align-items:center;
+justify-content:center;font-size:30px;box-shadow:0 4px 15px #0003}
+@media(max-width:850px){
+.layout{grid-template-columns:1fr}
+.hero h1{font-size:32px}
+}
+@media(max-width:550px){
+header{justify-content:center}
+nav{justify-content:center}
+.formgrid{grid-template-columns:1fr}
+.field.full{grid-column:auto}
+.hero{padding:35px 6%}
+.hero h1{font-size:29px}
+.card{padding:18px}
+.services{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">CITY<span>PLANNERS</span></div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#enquiry">Enquiry</a>
+    <a href="#contact">Contact</a>
+    <a class="btn btn-green" href="https://wa.me/919962105943">WhatsApp</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Let's discuss <span>your project.</span></h1>
+    <p>Expert consultancy and project support for traffic, transportation,
+    airports, buildings, roads and infrastructure projects.</p>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="service"><div class="icon">🚦</div>Traffic Studies</div>
+  <div class="service"><div class="icon">⛽</div>Petrol Pump Consultancy</div>
+  <div class="service"><div class="icon">🚧</div>Traffic Management</div>
+  <div class="service"><div class="icon">📐</div>Land Survey</div>
+  <div class="service"><div class="icon">🛣️</div>Roads & Highways</div>
+  <div class="service"><div class="icon">🏗️</div>Road Construction</div>
+  <div class="service"><div class="icon">✈️</div>Airports</div>
+  <div class="service"><div class="icon">🏢</div>Buildings</div>
+</section>
+
+<div class="container">
+<div class="layout">
+
+<section class="card" id="enquiry">
+<h2>✉ Send us your Project Enquiry</h2>
+
+<form id="whatsappForm">
+<div class="formgrid">
+
+<div class="field">
+<label>Full Name *</label>
+<input id="name" required placeholder="Enter your name">
+</div>
+
+<div class="field">
+<label>Company / Organisation</label>
+<input id="company" placeholder="Enter company name">
+</div>
+
+<div class="field">
+<label>Email Address *</label>
+<input id="email" type="email" required placeholder="Enter your email">
+</div>
+
+<div class="field">
+<label>Phone / WhatsApp *</label>
+<input id="phone" required placeholder="Mobile number">
+</div>
+
+<div class="field">
+<label>Service Required *</label>
+<select id="service" required>
+<option value="">Select a service</option>
+<option>Traffic Surveys & Data Collection</option>
+<option>Petrol Pump / Fuel Station Consultancy</option>
+<option>Traffic Impact Assessment</option>
+<option>Construction Traffic Management</option>
+<option>Traffic Diversion & Detour Planning</option>
+<option>Road & Highway Engineering</option>
+<option>Road Construction</option>
+<option>Land & Topographic Survey</option>
+<option>Airport Planning & Consultancy</option>
+<option>Airport Project Management</option>
+<option>Building Design & Consultancy</option>
+<option>Building Project Management</option>
+<option>Infrastructure Project Management</option>
+<option>Transportation Planning</option>
+<option>Road Safety</option>
+<option>Other Consultancy Services</option>
+</select>
+</div>
+
+<div class="field">
+<label>Project Location *</label>
+<input id="location" required placeholder="City, State, Country">
+</div>
+
+<div class="field full">
+<label>Project Details / Scope *</label>
+<textarea id="details" required maxlength="1000"
+placeholder="Describe your project, requirement, timeline or scope..."></textarea>
+</div>
+
+</div>
+
+<div class="actions">
+<button class="btn btn-blue" type="submit">Send Enquiry</button>
+<a class="btn btn-green"
+href="https://wa.me/919962105943?text=Hello%20CityPlanners%2C%20I%20have%20a%20project%20enquiry."
+target="_blank">Chat on WhatsApp</a>
+</div>
+</form>
+</section>
+
+<aside id="contact" class="card">
+<h2>📞 Get in Touch</h2>
+
+<div class="contactbox">
+<div class="contacticon">📱</div>
+<div>
+<h3>Call / WhatsApp</h3>
+<p><a href="tel:+919962105943">+91 99621 05943</a></p>
+<p>Monday – Saturday | 9 AM – 6 PM</p>
+</div>
+</div>
+
+<div class="contactbox">
+<div class="contacticon">✉</div>
+<div>
+<h3>Email</h3>
+<p><a href="mailto:admin@cityplanners.in">admin@cityplanners.in</a></p>
+<p>We aim to respond within one working day.</p>
+</div>
+</div>
+
+<div class="contactbox">
+<div class="contacticon">📍</div>
+<div>
+<h3>Office Address</h3>
+<p>40/B, Second Street, VGP Vimala Nagar,<br>
+Medavakkam, Chennai, Tamil Nadu – 600100, India.</p>
+</div>
+</div>
+
+<iframe class="map"
+src="https://maps.google.com/maps?q=Medavakkam%20Chennai&t=&z=14&ie=UTF8&iwloc=&output=embed"
+loading="lazy"></iframe>
+</aside>
+
+</div>
+
+<section class="steps">
+<h2>What happens next?</h2>
+
+<div class="step">
+<div class="number">1</div>
+<div><h3>We review your enquiry</h3>
+<p>We understand your requirement and check the key details.</p></div>
+</div>
+
+<div class="step">
+<div class="number">2</div>
+<div><h3>We discuss & plan</h3>
+<p>We discuss scope, data needs, approach and timelines.</p></div>
+</div>
+
+<div class="step">
+<div class="number">3</div>
+<div><h3>You receive a proposal</h3>
+<p>A clear proposal with scope, deliverables, time and cost.</p></div>
+</div>
+</section>
+
+</div>
+
+<footer>
+<strong>CITYPLANNERS</strong><br>
+Traffic | Transportation | Airports | Buildings | Roads | Infrastructure<br><br>
+© CityPlanners. All rights reserved.
+</footer>
+
+<a class="floating" href="https://wa.me/919962105943"
+target="_blank" aria-label="Chat on WhatsApp">◉</a>
+
+<script>
+document.getElementById("whatsappForm").addEventListener("submit",function(e){
+e.preventDefault();
+
+const message =
+"New CityPlanners Project Enquiry%0A%0A"+
+"Name: "+encodeURIComponent(document.getElementById("name").value)+"%0A"+
+"Company: "+encodeURIComponent(document.getElementById("company").value)+"%0A"+
+"Email: "+encodeURIComponent(document.getElementById("email").value)+"%0A"+
+"Phone: "+encodeURIComponent(document.getElementById("phone").value)+"%0A"+
+"Service: "+encodeURIComponent(document.getElementById("service").value)+"%0A"+
+"Location: "+encodeURIComponent(document.getElementById("location").value)+"%0A"+
+"Details: "+encodeURIComponent(document.getElementById("details").value);
+
+window.open("https://wa.me/919962105943?text="+message,"_blank");
+});
+</script>
+
+</body>
+</html>
